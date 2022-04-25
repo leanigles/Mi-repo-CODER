@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenido{
+    background: #000000;
+    background: -moz-linear-gradient(-45deg, #000000 0%, #127605 87%, #2CC519 100%);
+    background: -webkit-linear-gradient(-45deg, #000000 0%, #127605 87%, #2CC519 100%);
+    background: linear-gradient(135deg, #000000 0%, #127605 87%, #2CC519 100%);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 34% 33% 33%;
+    grid-template-rows: 200px 200px 900px 200px 50px;
+    grid-template-areas: "escudo navegador navegador"
+                         "banner    banner    banner"
+                         "principal principal principal"
+                         "publicidad publicidad publicidad"
+                         "pie     pie     pie";
+}
+.logo{
+    grid-area: escudo;
+}
+.navegador{
+    grid-area: navegador;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+}
+.menu li{
+    display: inline-block;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    font-weight: 700px;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+.banner{
+    grid-area: banner;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.principal{
+    grid-area: principal;
+}
+footer{
+    grid-area: pie;
+    display: flex;
+    justify-content: center;   
+    margin: 15px; 
+}
+footer a{
+    margin-left: 10px;
+}
+.imagenEscudo{
+    position: relative;
+    bottom: 50px;
+}
+.fotos{
+    display: flex;
+    justify-content: center;
+}
+.boxnoticias{
+    background-color: #000000;
+    border: 8px solid #FFFFFF;
+    border-radius: 40px;
+    width: 100%;
+    padding: 20px;
+    margin: 40px;    
+    color: #127605;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.publicidad{
+    grid-area: publicidad;   
+    display: flex;
+}
+.publicidad img{
+    height: 180px;
+    margin: 10px 0px 10px 150px;
+}
+
+@media (min-width: 1200px) {
+    .contenido{
+        background: #000000;
+        background: -moz-linear-gradient(-45deg, #000000 0%, #127605 87%, #2CC519 100%);
+        background: -webkit-linear-gradient(-45deg, #000000 0%, #127605 87%, #2CC519 100%);
+        background: linear-gradient(135deg, #000000 0%, #127605 87%, #2CC519 100%);
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 34% 33% 33%;
+        grid-template-rows: 200px 200px 900px 50px;
+        grid-template-areas: "escudo navegador navegador"
+                             "banner    banner    banner"
+                             "principal principal publicidad"
+                             "pie     pie     pie";
+    }
+    .publicidad{
+        grid-area: publicidad;   
+        display: block;
+    }
+}

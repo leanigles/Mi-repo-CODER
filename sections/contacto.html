@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/img/icono_pelota.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basquet-San Miguel</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Club Atlético San Miguel</h1>
+        <div class="logo"><img src="../assets/img/logo.png" alt="logo_basquet_san_miguel"/>
+        </div> 
+        <nav>
+        <ul>
+            <li class="menu"><a href="../index.html">Inicio</a></li>
+            <li class="menu"><a href="./noticias.html">Noticias</a></li>
+            <li class="menu"><a href="./actividades.html">Actividades</a></li>
+            <li class="menu"><a href="./galeria.html">Galería</a></li>
+            <li class="menu"><a href="./contacto.html">Contacto</a></li>   
+        </ul>
+    </nav>
+    </header>
+    <section class="formulario">            
+    <h2>Contacto</h2>
+        <p>¿Tenés alguna duda, consulta o queres sumarte a nuestro equipo?</p>
+    <form action="./datos_contacto.php" method="post"> 
+        <label for="nombre">Ingrese su nombre:</label>
+        <input name="nombre">
+        <label for="sexo">Hombre</label>
+        <input type="radio" name="sexo" value="hombre" />
+        <label for="sexo">Mujer</label>
+        <input type="radio" name="sexo" value="mujer" />
+        <label for="sexo">Sin especificar</label>
+        <input type="radio" name="sexo" value="mujer" />
+        <label for="nombre">Ingrese su mail:</label>            
+        <input name="email">
+        <label for="nombre">Escribe tu consulta:</label>
+        <textarea></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+    </section>
+    <footer>
+        <p>Copyright © 2022 Club San Miguel. Todos los derechos reservados. Designed by Leandro Iglesias</p>
+    </footer>
+</body>
+</html>
