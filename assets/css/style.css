@@ -19,7 +19,7 @@
                          "pie     pie     pie";
 }
 .logo{
-    grid-area: escudo;
+    grid-area: escudo;    
 }
 .navegador{
     grid-area: navegador;
@@ -45,6 +45,9 @@
     font-style: normal;
     font-variant: small-caps;
     text-transform: none;
+}
+.menu li :hover{
+    opacity: 30%;
 }
 .banner{
     grid-area: banner;   
