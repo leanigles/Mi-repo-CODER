@@ -3,10 +3,10 @@
     padding: 0;
 }
 
-.contenido{
+.contenido{ 
     background: #000000;
-    background: -moz-linear-gradient(-45deg, #000000 0%, #127605 87%, #2CC519 100%);
-    background: -webkit-linear-gradient(-45deg, #000000 0%, #127605 87%, #2CC519 100%);
+    background: -moz-linear-gradient(-45deg, #000000 0%, #127605 87%, #2CC519 100%) ;
+    background: -webkit-linear-gradient(-45deg, #000000 0%, #127605 87%, #2CC519 100%) !;
     background: linear-gradient(135deg, #000000 0%, #127605 87%, #2CC519 100%);
     display: grid;
     gap: 10px;
@@ -125,4 +125,11 @@ a{
         grid-area: publicidad;   
         display: block;
     }
+}
+.nav-item{
+    font-size: 40px;
+    font-style: inherit;
+}
+.nav-item :hover{
+    opacity: 30%;
 }
