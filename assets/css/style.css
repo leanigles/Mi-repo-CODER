@@ -37,7 +37,7 @@ footer a{
     border: 8px solid #FFFFFF;
     border-radius: 40px;
     width: 100%;
-    padding: 20px;   
+    padding: 15px;   
     color: #127605;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 15px;
@@ -48,6 +48,7 @@ footer a{
     font-style: normal;
     font-variant: small-caps;
     text-transform: none;
+    margin: 20px;
 }
 a{
     text-decoration: none;
@@ -57,16 +58,16 @@ a{
     flex-direction: column;
     margin: 50px;
 }
-.publicidad img{
-    height: 180px;
-    margin: 10px 0px 10px 150px;
-}
 
 @media (min-width: 1200px) {
     body{
         background-color: black;
+        }
+    .carousel-inner{
+            margin-left: 90px; 
+            margin-top: 50px;
+        }
     }
-}
 .nav-item{
     font-size: 40px;
     font-style: inherit;
@@ -75,18 +76,15 @@ a{
     opacity: 30%;   
 }
 .nav-link{
-    color: rgb(21, 255, 0) !important;
+    color: rgb(8, 87, 1) !important;
     margin-top: 80px;
-}
-.carousel-inner{
-    width: 1200px;
-    height: 750px;
-    margin-left: 90px; 
-    margin-top: 50px;
 }
 .navbar-light .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 0.1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }   
 .navbar-light .navbar-toggler {
     border: 1px solid green;
+}
+.logo{
+    width: 200px;
 }
