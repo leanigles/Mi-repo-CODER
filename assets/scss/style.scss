@@ -1,0 +1,94 @@
+@import "_variables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .menu{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 800px;
+    }
+    li :hover{
+        opacity: 30%;
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;   
+    margin: 25px !important; 
+    a{
+        margin-left: 10px;
+    }
+}
+ 
+.fotos{
+    display: flex;
+    justify-content: center;
+}
+.boxnoticias{
+    background-color: #000000;
+    border: 8px solid #FFFFFF;
+    border-radius: 40px;
+    width: 100%;
+    padding: 15px;   
+    color: $colorprincipal;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+}
+.publicidad{ 
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+@media (min-width: 1200px) {
+    body{
+        background-color: black;
+        }
+    .carousel-inner{
+            margin-left: 90px; 
+            margin-top: 50px;
+        }
+    }
+.nav-item{
+    font-size: 40px;
+    font-style: inherit;
+    &:hover{
+    opacity: 30%;
+    }
+}
+.nav-link{
+    color: $colorprincipal !important;
+    margin-top: 80px;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 0.1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}   
+.navbar-light .navbar-toggler {
+    border: 1px solid $colorprincipal;
+}
+.logo{
+    width: 200px;
+}
+
