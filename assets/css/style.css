@@ -75,6 +75,9 @@ a {
 
 .nav-link {
   color: #127605 !important;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 4px #fff;
+  letter-spacing: 2px;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -105,5 +108,14 @@ form {
 
 .logo {
   width: 150px;
+}
+
+.carousel-item {
+  width: auto;
+  margin-left: 190px;
+}
+
+.bg-color {
+  background-color: #2222227c;
 }
 /*# sourceMappingURL=style.css.map */
