@@ -3,4 +3,5 @@ Se aplicó extend sobre el formulario de la página de Contacto. Aplicando el mi
 Se agregó el sitemap.
 Aún queda por optimizar las imágenes para el seo y para mejorar el carousel.
 
+Se cambio la maquetación del index. El carousel servirá para las últimas 3 noticias, y redirige para la página noticias.
 

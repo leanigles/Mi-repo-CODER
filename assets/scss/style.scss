@@ -42,16 +42,21 @@ a{
 }
 .publicidad{ 
     display: flex;
-    flex-direction: column;
-    margin: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px; 
+}
+.fotopubli {
+    width: 400px;
 }
 
 @media (min-width: 492px) {
     body{
         background-color: black;
         }
-    .carousel-inner{
-            margin-left: 90px; 
+        .carousel-inner{
+            margin-left: 280px; 
             margin-top: 50px;
         }
         .logo {
@@ -95,4 +100,17 @@ form {
 }
 .bg-color {
     background-color: #2222227c;
+}
+h1 {
+    color: green;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}   
+h2 {
+    font-size: 50px;
+    color: #127605;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }

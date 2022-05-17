@@ -52,11 +52,20 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 50px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.fotopubli {
+  width: 400px;
 }
 
 @media (min-width: 492px) {
@@ -64,7 +73,7 @@ a {
     background-color: black;
   }
   .carousel-inner {
-    margin-left: 90px;
+    margin-left: 280px;
     margin-top: 50px;
   }
   .logo {
@@ -117,5 +126,28 @@ form {
 
 .bg-color {
   background-color: #2222227c;
+}
+
+h1 {
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: monospace;
+}
+
+h2 {
+  font-size: 50px;
+  color: #127605;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
