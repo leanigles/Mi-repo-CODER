@@ -25,7 +25,7 @@ footer a {
   margin-left: 10px;
 }
 
-.boxnoticias, form {
+.boxnoticias, .formulario form {
   background-color: #000000;
   border: 8px solid #FFFFFF;
   border-radius: 40px;
@@ -68,7 +68,11 @@ a {
   width: 400px;
 }
 
-@media (min-width: 492px) {
+img {
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
   body {
     background-color: black;
   }
@@ -76,9 +80,31 @@ a {
     margin-left: 280px;
     margin-top: 50px;
   }
+  .carousel-item {
+    width: auto;
+    margin-left: 190px;
+  }
   .logo {
     width: 350px;
     margin-right: 150px;
+  }
+  h2 {
+    font-size: 45px !important;
+  }
+  .galeria img:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  table {
+    font-size: 25px !important;
+  }
+  iframe {
+    margin-left: 600px;
+    width: 600px;
+    height: 450px;
+  }
+  form {
+    width: 650px !important;
   }
 }
 
@@ -101,27 +127,20 @@ a {
   font-size: 40px;
 }
 
-form {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 700px;
+.formulario form {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
 }
 
 .logo {
   width: 150px;
-}
-
-.carousel-item {
-  width: auto;
-  margin-left: 190px;
 }
 
 .bg-color {
@@ -140,7 +159,7 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 25px;
   color: #127605;
   margin: 20px;
   display: -webkit-box;
@@ -149,5 +168,39 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.fechapublicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 12px;
+}
+
+.galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+}
+
+.galeria img:hover {
+  border: 5px solid #FFFFFF;
+}
+
+table {
+  color: #fff;
+  background-color: #127605;
+  font-size: 10px;
+}
+
+p {
+  color: #127605;
 }
 /*# sourceMappingURL=style.css.map */
